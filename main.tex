@@ -1,0 +1,305 @@
+%-------------------------
+%  in Latex
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Ajay Chanumolu} % Your Name
+\newcommand{\course}{B.Tech - (2022-26)} % Your Course
+\newcommand{\phone}{8074177736} % Your Phone Number
+\newcommand{\emailb}{chanumoluajay@gmail.com} %Email 2
+\newcommand{\linkedin}{ajaychanumolu} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} 
+  \\ \course & +91-\phone\\ 
+  {Artificial Intelligence \& Machine Learning } & \href{mailto:\emailb}{\emailb}
+  \\{Sagi Ramakrishnam Raju Engineering College} & \href{https://www.linkedin.com/in/\linkedin/}{linkedin.com/in/\linkedin}
+\end{tabularx}
+} 
+
+\section{Education}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1
+\small{\begin{tabularx}
+{\dimexpr\textwidth-3mm\relax}{|c|C|c|c|}
+  \hline
+  \textbf{Degree/Certificate } & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \hline
+  B.Tech. AI\&ML & SRKR Engineering College& 8.69 & Till-3-2\\
+
+ %Optional
+  \hline
+  Senior Secondary & APBIE Board & 88\% & 2020-22 \\
+  \hline
+  Secondary & CBSE Board & 77\% & 2020 \\
+  \hline
+\end{tabularx}}
+\vspace{-2mm}
+
+\section{Experience}
+
+\resumeProject
+  {SDE Intern, Truviq Systems} % Role & Company
+  {AI-Powered Recruitment Automation} % Focus area
+  {May 2025 – Present} % Duration
+
+  \resumeItemListStart
+    \item {Built an end-to-end automation pipeline using \textbf{n8n} to streamline LinkedIn candidate sourcing based on dynamic job descriptions.}
+    \item {Integrated \textbf{Apify APIs} for large-scale LinkedIn profile scraping and filtering using custom role-specific parameters.}
+    \item {Implemented \textbf{LLM-based semantic matching models} (e.g., Gemini) to rank candidate-job relevance and trigger automated email outreach for high-fit profiles.}
+  \resumeItemListEnd
+
+
+    \resumeProject
+  {Cloud Intern, Takshalabs} % Role & Company
+  {Cloud Deployment} % Project/Team or Division
+  {Feb. 2024 – May. 2024} % Duration
+
+  \resumeItemListStart
+    \item {Deployed a PHP-based web application on an Azure Virtual Machine, configuring the cloud environment for seamless performance and secure access.}
+  \resumeItemListEnd
+
+
+    \vspace{-3mm}
+
+\section{Projects}
+\resumeSubHeadingListStart
+   \resumeProject
+  {DeepTrace: Multi-Modal Deepfake Detection} % Project Name
+  {Deep Learning} % Category
+  {Jan. 2024} % Dates
+  {\href{https://github.com/ajaychanumolu/DeepTrace}{GitHub}} % GitHub Link
+
+  \resumeItemListStart
+    \item {Built a deepfake detection system using ResNeXt+LSTM for video (accuracy: 83\%), CNN for audio (accuracy: 96\%), and DenseNet121 for images (accuracy: 99.4\%). \\ \textbf{Stack:} Python, PyTorch, TensorFlow, OpenCV, Jupyter}
+  \resumeItemListEnd
+
+    
+    \resumeProject
+  {Sclerosis Disease Prediction} % Project Name
+  {Machine Learning } % Category
+  {Dec. 2024} % Dates
+  {\href{https://github.com/ajaychanumolu/Sclerosis_Disease_Prediction}{GitHub}} % GitHub Link
+
+  \resumeItemListStart
+   \item {Developed a Random Forest Classifier with RFE and hyperparameter tuning to predict sclerosis progression with 87.2\% accuracy, evaluated using ROC-AUC.}
+\item {\textbf{Stack:} Python, Scikit-learn, Pandas, Gradio, Matplotlib}
+  \resumeItemListEnd
+ \resumeProject
+  {Chat with PDF using AI} % Project Title
+  {Document Query Automation} % Project Category
+  {May 2025} % Duration
+  {\href{https://github.com/ajaychanumolu/Chat-with-PDF-using-AI-n8n-Workflow}{GitHub}} % GitHub Link
+
+  \resumeItemListStart
+    \item {Built a workflow to extract PDF content, embed it using Gemini, and store in Pinecone for AI-based question answering.}
+    \item {Stack: n8n, Gemini API, Pinecone, Google Drive}
+  \resumeItemListEnd
+
+
+    
+   \resumeProject
+  {AI-Powered Tweet Summarizer} % Project Title
+  {Social Media Intelligence} % Project Category
+  {June 2025} % Duration
+  {\href{https://github.com/ajaychanumolu/tweet-summarizer-n8n}{GitHub}} % GitHub Link
+
+  \resumeItemListStart
+   \item {Built a no-code workflow to extract Tweets, summarize with Gemini, analyze sentiment, and save results in Google Sheets.}
+    \item {Stack: n8n, Apify, Gemini API, Google Sheets}
+  \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+\section{Technical Skills}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Programming} % Category
+    {Java, Python(familiar)}
+\resumeSubItem{Development} % Category
+    {Gradio, Streamlit, HTML, CSS, JavaScript}
+
+    \resumeSubItem{Automation Tools} % Category
+    {n8n (workflows, webhooks, APIs, data pipelines)}
+
+        \resumeSubItem{CS Subjects} % Category
+    { Data structures and Algorithms, OOPs concepts, Operating system}
+
+            \resumeSubItem{Deep learning} % Category
+    { Familiar with Tensorflow, Keras, Standard Deep learning models and concepts}
+\hspace{3mm}
+ \resumeHeadingSkillEnd
+
+
+% \section{Key courses taken}
+% \resumeHeadingSkillStart
+%  \resumeSubItem{Mathematics} % Category
+%     {Calculus, Linear Algebra and Ordinary Differential Equation\-I, Complex Analysis and Differential Equations-II, Numerical Methods.}
+% \resumeSubItem{Computer Science}
+%  {Computer Programming, Discrete Mathematical Structures, Data Structures and Algorithms, Data Base \& Information Systems, Computer Vision, Crypotography}
+% %  \resumeSubItem{Electrical and Electronics} % Category
+% %     {Advanced Control Systems, Digital Systems, Microprocessors} % Skills
+%  \resumeHeadingSkillEnd
+
+
+\section{Positions of Responsibility}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Executive Body Member} % Position
+    { Association of Computer Engineers Club, SRKREC} %Club,Event
+    {Aug. 2024 - Aug. 2025} %Tenure Period
+\resumePOR{Android Core Team Member} % Position
+    { GDSE, SRKREC} %Club,Event
+    {Aug. 2023 - Sep. 2024} %Tenure Period
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+
+\section{Certifications}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+
+  \resumePOR{Java Programming Fundamentals}{GalileoX (edX)}{2024}
+  \resumePOR{Postman API Fundamentals Student Expert}{Postman}{2024}
+
+\resumeSubHeadingListEnd
+
+
+\resumeSubHeadingListEnd
+
+% \vspace{-2mm}
+\hspace*{-5mm}\rule{1.035\textwidth}{0.1mm}
+
+
+%-------------------------------------------
+\end{document}
+
+
